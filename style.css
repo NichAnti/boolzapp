@@ -99,6 +99,11 @@
   overflow: auto;
   background-image: url(msg-background.jpg);
   background-size: cover;
+  display: none;
+}
+
+.chat.active {
+  display: block;
 }
 
 .write {
@@ -168,8 +173,45 @@
 }
 
 .message {
+  position: relative;
   max-width: 80%;
   padding: 15px;
+}
+
+.message i {
+  display: none;
+}
+
+.message:hover i {
+  display: inline;
+}
+
+.message .menu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-align: right;
+}
+
+.message .menu-options {
+  display: none;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+}
+
+.menu-options span {
+  display: block;
+}
+
+.menu-options span:hover {
+  font-weight: 
+}
+
+.message small {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
 .myMes {
