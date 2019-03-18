@@ -88,10 +88,10 @@ function getRispBox() {
   return box;
 }
 
-function getAns() {
+function getAns(active) {
 
   var box = getRispBox();
-  $(".chat.active").append(box);
+  active.append(box);
 }
 
 function sendMessage() {
@@ -104,7 +104,7 @@ function sendMessage() {
     $(".write-input").val("");
     sendButton();
 
-    setTimeout(getAns, 1000);
+    setTimeout(getAns, 1000, $(".chat.active"));
   }
 
 }

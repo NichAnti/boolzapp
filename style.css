@@ -176,6 +176,7 @@
   position: relative;
   max-width: 80%;
   padding: 15px;
+  word-wrap: break-word;
 }
 
 .message i {
@@ -205,7 +206,7 @@
 }
 
 .menu-options span:hover {
-  font-weight: 
+  font-weight:
 }
 
 .message small {
